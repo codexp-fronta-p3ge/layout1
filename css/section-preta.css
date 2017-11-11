@@ -4,6 +4,19 @@
     box-sizing: border-box;
 }
 
-main__preta {
-    flex-direction: column;
+.main__preta {
+    flex-flow: column-nowrap;
+    padding: 5%;
+    background-color: grey;
+    text-align: center;
+    color: white;
 }
+
+.main__preta h2 {
+    align-items: center;
+}
+
+.main__section {
+
+}
+
