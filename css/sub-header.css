@@ -1,18 +1,20 @@
 
 .sub-header{    
-    height: auto;
+    height: auto;    
 }
 
 .section__elements{  
     height: auto;
     display: flex;
+    justify-content: center;
+    align-items: center; 
+    align-self: stretch; 
     flex-direction: column;
     flex-wrap: wrap;
 }
 
 .section__element{   
-    padding: 10px;    
-    flex: 1;
+    padding: 10px;        
     text-align: center;
     height: 100%; 
     width: 100%;    
@@ -53,4 +55,20 @@
 
 .element_text{
     padding: 10px;
+}
+
+@media screen and (min-width: 768px) { 
+    .section__element{
+        width: 80%;
+    }
+}
+    
+@media screen and (min-width: 1200px) {    
+    .section__elements{ 
+        align-items: flex-start;
+        flex-direction: row;
+    }
+    .section__element{
+        width: 25%;  
+    }
 }
