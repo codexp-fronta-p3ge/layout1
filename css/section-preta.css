@@ -6,6 +6,15 @@
     font-weight: 300;
 }
 
+.main__red-bar {
+    width: 100%;
+    padding: 8%;
+    background: #C23F2D;
+    color: white;
+    text-align: center;
+    font-size: 2em;
+}
+
 .main__preta {
     /*padding: 7%;*/
     background-color: #414154;
