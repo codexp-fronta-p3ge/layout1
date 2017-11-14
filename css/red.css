@@ -1,8 +1,31 @@
+.head_container {
+    height: 500px;
+}
+
+.back_layer {
+    position: fixed;
+    z-index: -1;
+    width: 100%;
+    height: 500px;
+}
+
+.background {
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;        
+}
+
+.back_layer::before {
+    content: "";
+    background-color: #c54b3c;
+}
+
 .app_btn{
     display: flex;
     justify-content: space-around;
     width: 80%;
-    margin: auto;   
+    margin: auto;       
 }
 
 .google_btn a, .apple_btn a {
