@@ -1,0 +1,11 @@
+.app_btn{
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+    margin: auto;   
+}
+
+.google_btn a, .apple_btn a {
+    height: 100%; 
+    width: 100%;
+} 
