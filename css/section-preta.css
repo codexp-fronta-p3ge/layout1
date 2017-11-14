@@ -7,36 +7,38 @@
 }
 
 .main__preta {
-    padding: 7%;
+    /*padding: 7%;*/
     background-color: #414154;
     text-align: center;
     color: white;
 }
 
 .main__preta h2 {
+    padding: 7% 15% 0 15%;
     align-items: center;
-    font-size: 4.5em;
+    font-size: 4em;
     font-weight: 400;
 }
 
 .main__section {
     overflow: hidden;
-    height: 700px;
-    margin-top: 5%;
+    padding: 10% 7% 0 7%;
 }
 
 .main__section i, h3, p {
-    margin: 5% 0;
+    margin: 6% 0;
 }
 
-.main__section darker {
+.main__section.darker {
     background-color: #292936;
 }
 
 .main__section i {
+    display: inline;
     width: 10%;
-    padding: 2%;
+    padding: 3%;
     background: #C23F2D;
+    font-size: 1.5em;
 }
 
 .main__section h3 {
@@ -45,19 +47,60 @@
 
 .main__section p {
     text-align: left;
+    font-size: 0.8em;
 }
 
 .main__section img {
-    margin-top: 5%;
+    margin: 2% auto 0 auto;
+    display: block;
+}
+
+@media screen and (min-width: 768px) {
+
+    .main__section img {
+        width: 70%;
+    }
+
+    .main__section i {
+        margin: 2% 0;
+    }
+
+    .main__section p {
+        font-size: 1em;
+    }
+
 }
 
 @media screen and (min-width: 1200px) {
     
-    .main__section {
+    /*.main__section, .main__section.darker {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        height: 400px;
+    }*/
+
+    .main__content {
+        display: flex;
+        flex-direction: row;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .main__section.darker img {
+        order: 1;
+    }
+
+    .main__section.darker i {
+        order: 2;
+    }
+
+    .main__section.darker .main__texto {
+        order: 3;
+    }
+
+    .main__texto {
+        width: 40%;
+        margin: 0 5% 10% 0;
     }
 
     .main__section i, h3, p, img {
@@ -66,7 +109,9 @@
 
     .main__section i {
         flex-grow: 1;
-        height: 10%;
+        width: 2%;
+        height: 5%;
+        padding: 1%;
     }
 
     .main__texto {
@@ -76,6 +121,7 @@
 
     .main__section img {
         flex-grow: 1;
-        height: 150%;
+        width: 30%;
+        margin-top: 0;
     }
 }
