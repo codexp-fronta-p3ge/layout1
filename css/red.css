@@ -20,9 +20,7 @@
     height: 100%;
     background-color: #c54b3c;
     opacity: 0.8;
-
 }
-
 
 .background {
     -webkit-background-size: cover;
@@ -38,8 +36,14 @@
 }
 
 .logo {
+    margin: auto;
     max-width: 280px;   
     height: 40%;
+}
+
+.logo img {
+    display: block;
+    margin: auto;
 }
 
 .logo figcaption, h1 {
@@ -125,8 +129,23 @@
         height: 500px;
     }
 
+    .text_content {
+        margin-left: 50%;
+    }
+
     .text_content p {
         display: block;
         text-align: justify;
     }
+
+    .app_btn {
+        margin-left: 50%;
+    }
+
+    .back_layer::after {
+    content: "";
+    position: absolute;
+    opacity: 0;
+    }
+
 }
