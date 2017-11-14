@@ -2,21 +2,80 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
 }
 
 .main__preta {
-    flex-flow: column-nowrap;
-    padding: 5%;
-    background-color: grey;
+    padding: 7%;
+    background-color: #414154;
     text-align: center;
     color: white;
 }
 
 .main__preta h2 {
     align-items: center;
+    font-size: 4.5em;
+    font-weight: 400;
 }
 
 .main__section {
-
+    overflow: hidden;
+    height: 700px;
+    margin-top: 5%;
 }
 
+.main__section i, h3, p {
+    margin: 5% 0;
+}
+
+.main__section darker {
+    background-color: #292936;
+}
+
+.main__section i {
+    width: 10%;
+    padding: 2%;
+    background: #C23F2D;
+}
+
+.main__section h3 {
+    font-size: 2em;
+}
+
+.main__section p {
+    text-align: left;
+}
+
+.main__section img {
+    margin-top: 5%;
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .main__section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        height: 400px;
+    }
+
+    .main__section i, h3, p, img {
+        margin: 0 5%;
+    }
+
+    .main__section i {
+        flex-grow: 1;
+        height: 10%;
+    }
+
+    .main__texto {
+        flex-grow: 1;
+        text-align: left;
+    }
+
+    .main__section img {
+        flex-grow: 1;
+        height: 150%;
+    }
+}
