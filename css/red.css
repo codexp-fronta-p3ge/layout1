@@ -13,12 +13,8 @@
     -webkit-background-size: cover;
     background-size: cover;
     width: 100%;
-    height: 100%;        
-}
-
-.back_layer::before {
-    content: "";
-    background-color: #c54b3c;
+    height: 100%; 
+    background-color: #c54b3c;       
 }
 
 .app_btn{
