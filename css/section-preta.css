@@ -9,22 +9,20 @@
 .main__red-bar {
     width: 100%;
     padding: 8%;
-    background: #C23F2D;
+    background: #c54b3c;
     color: white;
     text-align: center;
     font-size: 2em;
 }
 
 .main__preta {
-    /*padding: 7%;*/
     background-color: #414154;
-    text-align: center;
     color: white;
 }
 
 .main__preta h2 {
     padding: 7% 15% 0 15%;
-    align-items: center;
+    text-align: center;
     font-size: 4em;
     font-weight: 400;
 }
@@ -34,27 +32,30 @@
     padding: 10% 7% 0 7%;
 }
 
-.main__section i, h3, p {
-    margin: 6% 0;
-}
-
-.main__section.darker {
-    background-color: #292936;
-}
-
 .main__section i {
-    display: inline;
+    display: block;
     width: 10%;
     padding: 3%;
-    background: #C23F2D;
+    margin: 6% auto;
+    background: #c54b3c;
     font-size: 1.5em;
 }
 
-.main__section h3 {
-    font-size: 2em;
+.fa {
+    text-align: center;
 }
 
-.main__section p {
+.main__texto.h3 , .main__texto.p {
+    margin: 6% 0;
+}
+
+.main__texto.h3 {
+    padding: 0 10%;
+    text-align: center;
+    font-size: 2.2em;
+}
+
+.main__section.p {
     text-align: left;
     font-size: 0.8em;
 }
@@ -63,6 +64,13 @@
     margin: 2% auto 0 auto;
     display: block;
 }
+
+.main__section.darker {
+    background-color: #292936;
+}
+
+
+/*-------------TABLET--------------*/
 
 @media screen and (min-width: 768px) {
 
@@ -74,25 +82,34 @@
         margin: 2% 0;
     }
 
-    .main__section p {
+    .main__texto.h3 {
+        font-size: 2em;
+    }
+
+    .main__texto.p {
         font-size: 1em;
     }
 
 }
 
+
+/*-------------DESKTOP--------------*/
+
 @media screen and (min-width: 1200px) {
     
-    /*.main__section, .main__section.darker {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }*/
+    .main__red-bar {
+        font-size: 2em;
+    }
 
     .main__content {
         display: flex;
         flex-direction: row;
         max-width: 1000px;
         margin: 0 auto;
+    }
+
+    .main__section {
+        padding: 6% 7% 0 7%;
     }
 
     .main__section.darker img {
@@ -107,12 +124,7 @@
         order: 3;
     }
 
-    .main__texto {
-        width: 40%;
-        margin: 0 5% 10% 0;
-    }
-
-    .main__section i, h3, p, img {
+    .main__section i, .main__texto-h3, .main__texto-p {
         margin: 0 5%;
     }
 
@@ -124,13 +136,20 @@
     }
 
     .main__texto {
+        width: 60%;
         flex-grow: 1;
+        text-align: left;
+    }
+
+    .main__texto.h3 {
+        padding: 0;
+        margin: 0;
         text-align: left;
     }
 
     .main__section img {
         flex-grow: 1;
-        width: 30%;
+        width: 20%;
         margin-top: 0;
     }
 }
